@@ -7,7 +7,6 @@ import Portfolio from "./portfolio";
 function Body () {
     return (
         <section className="BodyHolder">
-            <h1 className="BodyText"> Body </h1>
             <About></About>
             <Portfolio></Portfolio>
             <Resume></Resume>
