@@ -42,25 +42,26 @@
 /* -------------------------------------------------------------------------------------- */
 /* Root Styles */
 * {
-  font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', 'sans-serif';
+  font-family: 'Frutiger', "Frutiger Linotype", 'Univers, Calibri', "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 :root {
-  --primary-color: #373E40;
-  --secondary-color: #e6d35b;
-  --tertiary-color: #b3bed4;
-  --white: #FFFF;
+  --color1: #1c1b1d;
+  --color2: #0c0032;
+  --color3: #190061;
+  --color4: #512386;
+  --color5:#3f5de2;
+  --white: white;
 }
 
 /* HEADER STYLES */
 
 header {
   padding: 5px;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: var(--color1);
   display: flex;
   position: -webkit-sticky;
   position: sticky;
@@ -72,11 +73,11 @@ header h1 {
   font-weight: bold;
   font-size: 40px;
   margin: 0;
-  padding-left: 10px;
+  padding-left: 30px;
 }
 
 header a {
-  color: var(--secondary-color);
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -95,28 +96,44 @@ header nav ul {
 }
 
 header nav ul li a {
-  padding: 10px 20px;
+  padding: 10px 40px;
   font-size: 1.55vw;
 }
 /* END OF HEADER STYLES */
 
 /* HERO STYLES */
-.hero {
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: var(--tertiary-color);
+.myName {
+  font-size: 60px;
 }
 
-.hero img { 
-  margin: 15px;
-  float: left;
+.heroImg {
   width: 100%;
-  border: solid 5px var(--secondary-color);
-  border-radius: 15px;
+  border-bottom: 5px solid var(--color5);
+  border-top: 5px solid var(--color5);
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.heroHolder {
+  margin: 0;
+  background-color: var(--color1);
+  position: relative;
+}
+
+.textHolder {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  width: 30%;
+  color: var(--white);
+
+}
+
+.heroText {
+  font-family: 'Consolas', 'monaco', monospace;
+  font-size:32px;
+  margin-bottom: 30px;
+  line-height: 60px;
 }
 
 /* END OF HERO STYLES */
@@ -124,15 +141,12 @@ header nav ul li a {
 /* BIO STYLES */
 
 .bio {
+  margin-top: 0;
   width: 100%;
-  margin: 0 auto;
-  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: var(--secondary-color);
-  border-top: var(--primary-color) 5px solid;
-  border-bottom: var(--primary-color) 5px solid;
+  background-color: var(--color1);
 }
 
 .image {
@@ -142,9 +156,9 @@ header nav ul li a {
 
 .bio img {
   margin: 20px 0;
-  border: var(--primary-color) 5px solid;
+  border: var(--color1) 5px solid;
   border-radius: 15px;
-  color: var(--primary-color);
+  color: var(--color1);
   flex: 1;
   width: 100%;
   justify-content: center;
@@ -162,9 +176,9 @@ header nav ul li a {
 .bio p {
   margin: 10px auto;
   text-align: center;
-  border: solid 3px var(--primary-color);
+  border: solid 3px var(--color1);
   border-radius: 15px;
-  background-color: var(--white);
+  background-color: var(--color4);
   display: flex;
   flex-wrap: wrap;
 }
@@ -177,14 +191,14 @@ header nav ul li a {
   margin: 0 auto;
   padding: 20px;
   justify-content: space-around;
-  background-color: var(--primary-color);
+  background-color: var(--color1);
   align-items: center;
 }
 
 .portfolio h2 {
   text-align: center;
-  background-color: var(--secondary-color);
-  border: var(--primary-color) 3px solid;
+  background-color: var(--color2);
+  border: var(--color1) 3px solid;
   border-radius: 15px;
   padding: 5px;
 }
@@ -207,7 +221,7 @@ header nav ul li a {
 
 .portfolio img {
   border-radius: 15px;
-  border: solid var(--secondary-color) 5px;
+  border: solid var(--color2) 5px;
   margin: 10px;
 }
 
@@ -231,7 +245,7 @@ header nav ul li a {
 /* CONTACT STYLES */
 
 .contact {
-  background-color: var(--secondary-color);
+  background-color: var(--color2);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -243,7 +257,7 @@ header nav ul li a {
 }
 
 .contact h2 {
-  color: var(--primary-color);
+  color: var(--color1);
   font-size: 38px;
 }
 
@@ -251,9 +265,9 @@ header nav ul li a {
 .info address {
   font-style: bold;
   font-size: 20px;
-  border: var(--primary-color) 5px solid;
+  border: var(--color1) 5px solid;
   border-radius: 15px;
-  background-color: var(--tertiary-color);
+  background-color: var(--color3);
   padding: 10px;
   line-height: 2;
   margin-top: 10px;
@@ -261,9 +275,9 @@ header nav ul li a {
 
 /* Form Style */
 form {
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
-  border: var(--primary-color) 5px solid;
+  color: var(--color2);
+  background-color: var(--color1);
+  border: var(--color1) 5px solid;
   border-radius: 15px;
   display: block;
   padding: 15px;
@@ -280,17 +294,17 @@ form label {
 form input, form textarea {
   margin: 10px;
   display: block;
-  background-color: var(--tertiary-color);
-  border: 3px var(--secondary-color) solid;
+  background-color: var(--color3);
+  border: 3px var(--color2) solid;
   border-radius: 5px;
 }
 
 form button {
   display: block;
-  border: 3px var(--secondary-color) solid;
+  border: 3px var(--color2) solid;
   border-radius: 10px;
   margin: 0 auto;
-  background-color: var(--secondary-color);
+  background-color: var(--color2);
   padding: 5px;
 
 }
@@ -303,7 +317,7 @@ form button {
 
 .resume img {
   border-radius: 15px;
-  border: solid var(--primary-color) 5px;
+  border: solid var(--color1) 5px;
   margin: 10px;
 }
 
@@ -312,8 +326,8 @@ form button {
 /* FOOTER STYLES */
 
 footer {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: var(--color1);
+  color: var(--color2);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -326,7 +340,7 @@ footer {
 }
 
 footer img {
-  border: var(--primary-color) 5px solid;
+  border: var(--color1) 5px solid;
   border-radius: 30px;
   width: 50px;
   float: right;

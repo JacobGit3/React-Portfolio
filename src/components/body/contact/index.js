@@ -30,7 +30,7 @@ function Contact () {
              </form>
         </div>
         <div class="resume">
-            <img src="./assets/images/test.png" alt="Resume"/>
+            <img src={require("../../assets/images/test.png")} alt="Resume"/>
         </div>
     </section>
     );

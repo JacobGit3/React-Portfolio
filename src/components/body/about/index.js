@@ -4,7 +4,7 @@ function About () {
     return (
         <section class="bio" id="bio">
         <div class="image">
-            <img src="./assets/images/me.jpg" alt="Me"/>
+            <img src={require("../../assets/images/me.jpg")} alt="Me"/>
         </div>
         <div class="bio-text">
             <h1>
