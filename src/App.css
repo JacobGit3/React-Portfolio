@@ -2,6 +2,7 @@
   text-align: center;
   margin: 0;
   padding: 0;
+  background-color: var(--color1);
 }
 
 .App-logo {
@@ -48,12 +49,13 @@
   box-sizing: border-box;
 }
 
+
 :root {
   --color1: #1c1b1d;
-  --color2: #0c0032;
-  --color3: #190061;
-  --color4: #512386;
-  --color5:#3f5de2;
+  --color2: #facc29;
+  --color3: #0c0c62;
+  --color4: #e71c3a;
+  --color5:#325af0;
   --white: white;
 }
 
@@ -69,71 +71,61 @@ header {
   z-index: 9999;
 }
 
-header h1 {
-  font-weight: bold;
-  font-size: 40px;
-  margin: 0;
-  padding-left: 30px;
+a {
+  text-decoration: none;
+  color: var(--white);
 }
 
-header a {
-  color: var(--white);
-  text-decoration: none;
+.link {
+  font-size: 2.4vw;
+  padding: 2vw;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 5vw;
+  margin: 1%;
+  padding-left: 1%;
 }
 
 header nav {
-  margin: 18px;
+  margin-top: 4vw;
 }
 
-/* putting nav elements inline */
 header nav ul {
   display: flex;
-  flex-wrap: wrap;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
   list-style: none;
-}
-
-header nav ul li a {
-  padding: 10px 40px;
-  font-size: 1.55vw;
 }
 /* END OF HEADER STYLES */
 
 /* HERO STYLES */
-.myName {
-  font-size: 60px;
-}
 
 .heroImg {
   width: 100%;
-  border-bottom: 5px solid var(--color5);
-  border-top: 5px solid var(--color5);
-  margin-bottom: 0;
-  padding-bottom: 0;
+  border-radius: 10vw;
 }
 
 .heroHolder {
   margin: 0;
+  padding: 0;
   background-color: var(--color1);
   position: relative;
+  border: 0.5vw solid var(--color5);
+  border-radius: 10vw;
 }
 
 .textHolder {
   position: absolute;
-  top: 100px;
-  left: 40px;
+  top: 18%;
+  left: 6%;
   width: 30%;
   color: var(--white);
-
 }
 
 .heroText {
   font-family: 'Consolas', 'monaco', monospace;
-  font-size:32px;
-  margin-bottom: 30px;
-  line-height: 60px;
+  font-size:  3vw;
+  line-height: 5vw;
 }
 
 /* END OF HERO STYLES */
@@ -141,11 +133,12 @@ header nav ul li a {
 /* BIO STYLES */
 
 .bio {
-  margin-top: 0;
+  margin: 1vw 0;
+  padding: 0;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   background-color: var(--color1);
 }
 
@@ -154,31 +147,34 @@ header nav ul li a {
   width: 30%;
 }
 
-.bio img {
-  margin: 20px 0;
-  border: var(--color1) 5px solid;
-  border-radius: 15px;
-  color: var(--color1);
+.portrait {
+  margin: 2vw 0;
+  border-radius: 2vw;
   flex: 1;
   width: 100%;
   justify-content: center;
 }
 
 .bio-text{
-  width: 50%;
+  color: var(--white);
+  width: 30%;
+  font-size: 2vw;
+  padding: 2vw;
+  margin: 0 3vw;
 }
 
 .bio h1 {
   text-align: center;
-  margin:20px;
+  margin: 1vw;
+  font-size: 4.5vw;
 }
 
 .bio p {
-  margin: 10px auto;
   text-align: center;
-  border: solid 3px var(--color1);
-  border-radius: 15px;
-  background-color: var(--color4);
+  border: solid 1vw var(--color5);
+  border-radius: 4vw;
+  padding: 1vw;
+  background-color: var(--color5);
   display: flex;
   flex-wrap: wrap;
 }
@@ -188,19 +184,17 @@ header nav ul li a {
 /* PORTFOLIO STYLES */
 
 .portfolio {
-  margin: 0 auto;
-  padding: 20px;
-  justify-content: space-around;
-  background-color: var(--color1);
-  align-items: center;
+  color: var(--white);
+  background-color: var(--color3);
+  border-top: 1vw solid var(--color5);
+  border-bottom: 1vw solid var(--color5);
+  border-radius: 2vw;
 }
 
-.portfolio h2 {
+.portfolio h1 {
   text-align: center;
-  background-color: var(--color2);
-  border: var(--color1) 3px solid;
-  border-radius: 15px;
-  padding: 5px;
+  margin: 1vw;
+  font-size: 4.5vw;
 }
 
 .project {
@@ -220,8 +214,8 @@ header nav ul li a {
 }
 
 .portfolio img {
-  border-radius: 15px;
-  border: solid var(--color2) 5px;
+  border-radius: 3vw;
+  border: solid var(--color5) 0.5vw;
   margin: 10px;
 }
 
@@ -245,46 +239,54 @@ header nav ul li a {
 /* CONTACT STYLES */
 
 .contact {
-  background-color: var(--color2);
+  color: var(--white);
+  background-color: var(--color1);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .contact > * {
   flex: 1;
-  margin: 30px;
+  margin: 4vw;
 }
 
-.contact h2 {
-  color: var(--color1);
-  font-size: 38px;
+.contactTitle {
+
+  color: var(--white);
+  font-size: 4.5vw;
 }
 
 /* Info Styles  */
-.info address {
-  font-style: bold;
-  font-size: 20px;
-  border: var(--color1) 5px solid;
-  border-radius: 15px;
+.info {
+  font-size: 2.5vw;
+  border: var(--color5) 1vw solid;
+  border-radius: 2vw;
   background-color: var(--color3);
-  padding: 10px;
-  line-height: 2;
-  margin-top: 10px;
+  padding: 1vw;
+  line-height: 5.4vw;
+  margin: 1vw;
+  height: 100%;
+  width: 100%;
 }
 
 /* Form Style */
 form {
-  color: var(--color2);
-  background-color: var(--color1);
-  border: var(--color1) 5px solid;
-  border-radius: 15px;
-  display: block;
-  padding: 15px;
-  font-size: 16px;
-  text-align: left;
+  float: center;
   width: 100%;
-  margin: 20px;
+  height: 100%;
+  color: var(--white);
+  background-color: var(--color3);
+  border: var(--color5) 1vw solid;
+  border-radius: 2vw;
+  padding: 15px;
+  font-size: 2vw;
+  text-align: center;
+  margin: 1vw;
+}
+
+input, textarea {
+ width: 90%;
 }
 
 form label {
@@ -292,33 +294,21 @@ form label {
 }
 
 form input, form textarea {
-  margin: 10px;
+  margin: 1.2vw;
   display: block;
   background-color: var(--color3);
-  border: 3px var(--color2) solid;
+  border: 0.5vw var(--color5) solid;
   border-radius: 5px;
 }
 
 form button {
+  color: var(--white);
   display: block;
-  border: 3px var(--color2) solid;
-  border-radius: 10px;
+  border: 1vw var(--color5) solid;
+  border-radius: 2vw;
   margin: 0 auto;
-  background-color: var(--color2);
+  background-color: var(--color5);
   padding: 5px;
-
-}
-
-/* Resume Style*/ 
-
-.resume {
-   text-align: center;
-}
-
-.resume img {
-  border-radius: 15px;
-  border: solid var(--color1) 5px;
-  margin: 10px;
 }
 
 /* END OF CONTACT STYLES */
@@ -327,24 +317,22 @@ form button {
 
 footer {
   background-color: var(--color1);
-  color: var(--color2);
+  color: var(--white);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .name {
-  font-size: 12px;
-  padding: 10px;
-  margin: 10px;
+  font-size: 1.6vw;
+  padding: 1vw;
+  margin: 2vw;
 }
 
 footer img {
-  border: var(--color1) 5px solid;
-  border-radius: 30px;
-  width: 50px;
+  width: 6vw;
   float: right;
-  margin: 15px;
+  margin: 2vw;
 }
 
 /* END OF FOOTER STYLE */
