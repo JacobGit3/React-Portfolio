@@ -28,7 +28,7 @@
 
   ---
   This project is used to display my projects, skills, and resume as a digital portfolio to show to companies hiring developers.
-  ![projects](assets/images/projects.png)
+  ![projects](src/components/assets/images/projects.png)
 
   ## Technology Used:
 
