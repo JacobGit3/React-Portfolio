@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.11f02713.css",
+    "main.js": "/static/js/main.8c492e52.js",
+    "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
+    "static/media/me.jpg": "/static/media/me.3b0fdb05463cb944546a.jpg",
+    "static/media/trail.png": "/static/media/trail.cac7aca90c7f2c383107.png",
+    "static/media/portfolio.png": "/static/media/portfolio.ed2d7deb90f0b3282aee.png",
+    "static/media/resume.png": "/static/media/resume.8be4c588f7884036bd6f.png",
+    "static/media/socialdb.png": "/static/media/socialdb.770c0e88d0dccb6c0046.png",
+    "static/media/employee.png": "/static/media/employee.1a3f3c0510a6e606a4c5.png",
+    "static/media/background.png": "/static/media/background.f764003e4d9cfb5fedf5.png",
+    "static/media/weather.png": "/static/media/weather.66d8d2b64c10596cfe97.png",
+    "static/media/budget.png": "/static/media/budget.526cfda107bb2459911e.png",
+    "static/media/devden.png": "/static/media/devden.55fd546bc9ce49dc6a03.png",
+    "static/media/instagram.png": "/static/media/instagram.6ace30d97b2a8e983503.png",
+    "static/media/social.png": "/static/media/social.19c9503f51fe4be2b796.png",
+    "index.html": "/index.html",
+    "main.11f02713.css.map": "/static/css/main.11f02713.css.map",
+    "main.8c492e52.js.map": "/static/js/main.8c492e52.js.map",
+    "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11f02713.css",
+    "static/js/main.8c492e52.js"
+  ]
+}
