@@ -8,9 +8,9 @@ function Footer () {
                 <h3> &copy;Copyright 2021</h3>
             </div>
             <div class="socials">
-                <img src="./assets/images/linkedin.png" alt="linkedin"/>
-                <img src="./assets/images/github.png" alt="github"/>
-                <img src="./assets/images/instagram.png" alt="instagram"/>
+                <img src={require("../assets/icons/linkedin.png")} alt="linkedin"/>
+                <img src={require("../assets/icons/github.png")} alt="github"/>
+                <img src={require("../assets/icons/instagram.png")} alt="instagram"/>
             </div>
         </footer>
     );

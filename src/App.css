@@ -2,6 +2,7 @@
   text-align: center;
   margin: 0;
   padding: 0;
+  background-color: var(--color1);
 }
 
 .App-logo {
@@ -42,25 +43,27 @@
 /* -------------------------------------------------------------------------------------- */
 /* Root Styles */
 * {
-  font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', 'sans-serif';
+  font-family: 'Frutiger', "Frutiger Linotype", 'Univers, Calibri', "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
 :root {
-  --primary-color: #373E40;
-  --secondary-color: #e6d35b;
-  --tertiary-color: #b3bed4;
-  --white: #FFFF;
+  --color1: #1c1b1d;
+  --color2: #facc29;
+  --color3: #0c0c62;
+  --color4: #e71c3a;
+  --color5:#325af0;
+  --white: white;
 }
 
 /* HEADER STYLES */
 
 header {
   padding: 5px;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: var(--color1);
   display: flex;
   position: -webkit-sticky;
   position: sticky;
@@ -68,55 +71,61 @@ header {
   z-index: 9999;
 }
 
-header h1 {
-  font-weight: bold;
-  font-size: 40px;
-  margin: 0;
-  padding-left: 10px;
+a {
+  text-decoration: none;
+  color: var(--white);
 }
 
-header a {
-  color: var(--secondary-color);
-  text-decoration: none;
+.link {
+  font-size: 2.4vw;
+  padding: 2vw;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 5vw;
+  margin: 1%;
+  padding-left: 1%;
 }
 
 header nav {
-  margin: 18px;
+  margin-top: 4vw;
 }
 
-/* putting nav elements inline */
 header nav ul {
   display: flex;
-  flex-wrap: wrap;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
   list-style: none;
-}
-
-header nav ul li a {
-  padding: 10px 20px;
-  font-size: 1.55vw;
 }
 /* END OF HEADER STYLES */
 
 /* HERO STYLES */
-.hero {
+
+.heroImg {
   width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: var(--tertiary-color);
+  border-radius: 10vw;
 }
 
-.hero img { 
-  margin: 15px;
-  float: left;
-  width: 100%;
-  border: solid 5px var(--secondary-color);
-  border-radius: 15px;
+.heroHolder {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color1);
+  position: relative;
+  border: 0.5vw solid var(--color5);
+  border-radius: 10vw;
+}
+
+.textHolder {
+  position: absolute;
+  top: 18%;
+  left: 6%;
+  width: 30%;
+  color: var(--white);
+}
+
+.heroText {
+  font-family: 'Consolas', 'monaco', monospace;
+  font-size:  3vw;
+  line-height: 5vw;
 }
 
 /* END OF HERO STYLES */
@@ -124,15 +133,13 @@ header nav ul li a {
 /* BIO STYLES */
 
 .bio {
+  margin: 1vw 0;
+  padding: 0;
   width: 100%;
-  margin: 0 auto;
-  padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: var(--secondary-color);
-  border-top: var(--primary-color) 5px solid;
-  border-bottom: var(--primary-color) 5px solid;
+  justify-content: center;
+  background-color: var(--color1);
 }
 
 .image {
@@ -140,31 +147,34 @@ header nav ul li a {
   width: 30%;
 }
 
-.bio img {
-  margin: 20px 0;
-  border: var(--primary-color) 5px solid;
-  border-radius: 15px;
-  color: var(--primary-color);
+.portrait {
+  margin: 2vw 0;
+  border-radius: 2vw;
   flex: 1;
   width: 100%;
   justify-content: center;
 }
 
 .bio-text{
-  width: 50%;
+  color: var(--white);
+  width: 30%;
+  font-size: 2vw;
+  padding: 2vw;
+  margin: 0 3vw;
 }
 
 .bio h1 {
   text-align: center;
-  margin:20px;
+  margin: 1vw;
+  font-size: 4.5vw;
 }
 
 .bio p {
-  margin: 10px auto;
   text-align: center;
-  border: solid 3px var(--primary-color);
-  border-radius: 15px;
-  background-color: var(--white);
+  border: solid 1vw var(--color5);
+  border-radius: 4vw;
+  padding: 1vw;
+  background-color: var(--color5);
   display: flex;
   flex-wrap: wrap;
 }
@@ -174,56 +184,42 @@ header nav ul li a {
 /* PORTFOLIO STYLES */
 
 .portfolio {
-  margin: 0 auto;
-  padding: 20px;
-  justify-content: space-around;
-  background-color: var(--primary-color);
-  align-items: center;
+  color: var(--white);
+  background-color: var(--color3);
+  border-top: 1vw solid var(--color5);
+  border-bottom: 1vw solid var(--color5);
+  border-radius: 2vw;
 }
 
-.portfolio h2 {
+.portfolio h1 {
   text-align: center;
-  background-color: var(--secondary-color);
-  border: var(--primary-color) 3px solid;
-  border-radius: 15px;
-  padding: 5px;
+  margin: 1vw;
+  font-size: 4.5vw;
 }
 
-.project {
-  width: 100%;
-  margin: 0 auto;
-  justify-content: center;
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.projects {
-  width: 100%;
-  margin: 0 auto;
+.cardHolder {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
-.portfolio img {
-  border-radius: 15px;
-  border: solid var(--secondary-color) 5px;
-  margin: 10px;
+.card {
+  margin: 2vw;
+  width: 25%;
+  border: var(--color5) solid 0.5vw;
+  border-radius: 2vw;
+  background-color: var(--color5);
 }
 
-.thumbnail {
-  margin: 0 10px;
-}
-
-
-.thumbnail-large {
-  justify-content: center;
-  margin: 0 10%;
-}
-
-.thumbnail-large img {
+.card img {
   width: 100%;
-  justify-content: center;
+  border-radius: 1.4vw;
+}
+
+.card a {
+  font-size: 2.5vw;
+  font-weight: 600;
+  text-align: center;
 }
 
 /* END OF PORTFOLIO STYLES */
@@ -231,46 +227,54 @@ header nav ul li a {
 /* CONTACT STYLES */
 
 .contact {
-  background-color: var(--secondary-color);
+  color: var(--white);
+  background-color: var(--color1);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .contact > * {
   flex: 1;
-  margin: 30px;
+  margin: 4vw;
 }
 
-.contact h2 {
-  color: var(--primary-color);
-  font-size: 38px;
+.contactTitle {
+
+  color: var(--white);
+  font-size: 4.5vw;
 }
 
 /* Info Styles  */
-.info address {
-  font-style: bold;
-  font-size: 20px;
-  border: var(--primary-color) 5px solid;
-  border-radius: 15px;
-  background-color: var(--tertiary-color);
-  padding: 10px;
-  line-height: 2;
-  margin-top: 10px;
+.info {
+  font-size: 2.5vw;
+  border: var(--color5) 1vw solid;
+  border-radius: 2vw;
+  background-color: var(--color3);
+  padding: 1vw;
+  line-height: 5.4vw;
+  margin: 1vw;
+  height: 100%;
+  width: 100%;
 }
 
 /* Form Style */
 form {
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
-  border: var(--primary-color) 5px solid;
-  border-radius: 15px;
-  display: block;
-  padding: 15px;
-  font-size: 16px;
-  text-align: left;
+  float: center;
   width: 100%;
-  margin: 20px;
+  height: 100%;
+  color: var(--white);
+  background-color: var(--color3);
+  border: var(--color5) 1vw solid;
+  border-radius: 2vw;
+  padding: 15px;
+  font-size: 2vw;
+  text-align: center;
+  margin: 1vw;
+}
+
+input, textarea {
+ width: 90%;
 }
 
 form label {
@@ -278,33 +282,21 @@ form label {
 }
 
 form input, form textarea {
-  margin: 10px;
+  margin: 1.2vw;
   display: block;
-  background-color: var(--tertiary-color);
-  border: 3px var(--secondary-color) solid;
+  background-color: var(--color3);
+  border: 0.5vw var(--color5) solid;
   border-radius: 5px;
 }
 
 form button {
+  color: var(--white);
   display: block;
-  border: 3px var(--secondary-color) solid;
-  border-radius: 10px;
+  border: 1vw var(--color5) solid;
+  border-radius: 2vw;
   margin: 0 auto;
-  background-color: var(--secondary-color);
+  background-color: var(--color5);
   padding: 5px;
-
-}
-
-/* Resume Style*/ 
-
-.resume {
-   text-align: center;
-}
-
-.resume img {
-  border-radius: 15px;
-  border: solid var(--primary-color) 5px;
-  margin: 10px;
 }
 
 /* END OF CONTACT STYLES */
@@ -312,25 +304,23 @@ form button {
 /* FOOTER STYLES */
 
 footer {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: var(--color1);
+  color: var(--white);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .name {
-  font-size: 12px;
-  padding: 10px;
-  margin: 10px;
+  font-size: 1.6vw;
+  padding: 1vw;
+  margin: 2vw;
 }
 
 footer img {
-  border: var(--primary-color) 5px solid;
-  border-radius: 30px;
-  width: 50px;
+  width: 6vw;
   float: right;
-  margin: 15px;
+  margin: 2vw;
 }
 
 /* END OF FOOTER STYLE */
@@ -355,6 +345,10 @@ footer img {
   .info {
       flex-basis: 100%;
   }
+
+  .card {
+    width: 45%;
+  }
 }
 
 /* Phones */
@@ -362,6 +356,10 @@ footer img {
   .bio > * {
       justify-content: center;
       width: 100%;
+  }
+
+  .bio-text {
+    width: 60%;
   }
 
   .bio img {
