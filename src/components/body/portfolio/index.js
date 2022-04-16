@@ -1,37 +1,57 @@
 import React from "react";
 
 function Portfolio () {
-    return (
-        <section class="portfolio" id="portfolio">
-        <h1>My Portfolio</h1>
+    const items = [
+        {
+            name: "Dev Den",
+            img: "devden.png",
+            git: "https://github.com/JacobGit3/Dev-Den"
+        },
+        {
+            name: "Trail Finder",
+            img: "trail.png",
+            git: "https://github.com/JacobGit3/trail-finder"
+        },
+        {
+            name: "Weather Dashboard",
+            img: "weather.png",
+            git: "https://github.com/JacobGit3/Weather-Dashboard"
+        },
+        {
+            name: "Budget PWA",
+            img: "budget.png",
+            git: "https://github.com/JacobGit3/Budget-Tracker-PWA"
+        },
+        {
+            name: "Social Media MongoDB",
+            img: "socialdb.png",
+            git: "https://github.com/JacobGit3/Social-Media-Mongo/tree/main"
+        },
+        {
+            name: "SQL Employee Tracker",
+            img: "employee.png",
+            git: "https://github.com/JacobGit3/Employee-Tracker"
+        },
+    ]
 
-        <div class="projects">
-            <div class="thumbnail">
-                <a href=""/>
-                <img src={require("../../assets/images/test.png")} alt="Project 2"/>
+    const renderCard = (card, index) => {
+        return (
+          <section key={index} class="card">
+            <img alt={card.name} src={require(`../../assets/images/${card.img}`)} />
+            <div class="cardBody">
+              <a class="card-git" href={card.git}> {card.name} </a>
             </div>
-            <div class="thumbnail">
-                <a href=""/>
-                <img src={require("../../assets/images/test.png")} alt="Project 3"/>
+          </section>
+        );
+      };
+
+    return (
+        <section class="portfolio">    
+            <h1 class="portfolioTitle"> My Portfolio </h1>
+            <div class="cardHolder">
+                {items.map(renderCard)}
             </div>
-            <div class="thumbnail">
-                <a href=""/>
-                <img src={require("../../assets/images/test.png")} alt="Project 4"/>
-            </div>
-            <div class="thumbnail">
-                <a href=""/>
-                <img src={require("../../assets/images/test.png")} alt="Project 2"/>
-            </div>
-            <div class="thumbnail">
-                <a href=""/>
-                <img src={require("../../assets/images/test.png")} alt="Project 3"/>
-            </div>
-            <div class="thumbnail">
-                <a href=""/>
-                <img src={require("../../assets/images/test.png")} alt="Project 4"/>
-            </div>
-        </div>
-    </section>
+        </section>
     );
 }
 

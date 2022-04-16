@@ -197,41 +197,29 @@ header nav ul {
   font-size: 4.5vw;
 }
 
-.project {
-  width: 100%;
-  margin: 0 auto;
-  justify-content: center;
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.projects {
-  width: 100%;
-  margin: 0 auto;
+.cardHolder {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
-.portfolio img {
-  border-radius: 3vw;
-  border: solid var(--color5) 0.5vw;
-  margin: 10px;
+.card {
+  margin: 2vw;
+  width: 25%;
+  border: var(--color5) solid 0.5vw;
+  border-radius: 2vw;
+  background-color: var(--color5);
 }
 
-.thumbnail {
-  margin: 0 10px;
-}
-
-
-.thumbnail-large {
-  justify-content: center;
-  margin: 0 10%;
-}
-
-.thumbnail-large img {
+.card img {
   width: 100%;
-  justify-content: center;
+  border-radius: 1.4vw;
+}
+
+.card a {
+  font-size: 2.5vw;
+  font-weight: 600;
+  text-align: center;
 }
 
 /* END OF PORTFOLIO STYLES */
@@ -357,6 +345,10 @@ footer img {
   .info {
       flex-basis: 100%;
   }
+
+  .card {
+    width: 45%;
+  }
 }
 
 /* Phones */
@@ -364,6 +356,10 @@ footer img {
   .bio > * {
       justify-content: center;
       width: 100%;
+  }
+
+  .bio-text {
+    width: 60%;
   }
 
   .bio img {
