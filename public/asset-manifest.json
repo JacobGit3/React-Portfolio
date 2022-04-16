@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/JacobGit3/React-Portfolio/static/css/main.11f02713.css",
+    "main.js": "/JacobGit3/React-Portfolio/static/js/main.bbf8d1da.js",
+    "static/js/787.a2cb61a6.chunk.js": "/JacobGit3/React-Portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/me.jpg": "/JacobGit3/React-Portfolio/static/media/me.3b0fdb05463cb944546a.jpg",
+    "static/media/trail.png": "/JacobGit3/React-Portfolio/static/media/trail.cac7aca90c7f2c383107.png",
+    "static/media/resume.png": "/JacobGit3/React-Portfolio/static/media/resume.8be4c588f7884036bd6f.png",
+    "static/media/socialdb.png": "/JacobGit3/React-Portfolio/static/media/socialdb.770c0e88d0dccb6c0046.png",
+    "static/media/employee.png": "/JacobGit3/React-Portfolio/static/media/employee.1a3f3c0510a6e606a4c5.png",
+    "static/media/background.png": "/JacobGit3/React-Portfolio/static/media/background.f764003e4d9cfb5fedf5.png",
+    "static/media/weather.png": "/JacobGit3/React-Portfolio/static/media/weather.66d8d2b64c10596cfe97.png",
+    "static/media/budget.png": "/JacobGit3/React-Portfolio/static/media/budget.526cfda107bb2459911e.png",
+    "static/media/devden.png": "/JacobGit3/React-Portfolio/static/media/devden.55fd546bc9ce49dc6a03.png",
+    "static/media/instagram.png": "/JacobGit3/React-Portfolio/static/media/instagram.6ace30d97b2a8e983503.png",
+    "static/media/social.png": "/JacobGit3/React-Portfolio/static/media/social.19c9503f51fe4be2b796.png",
+    "index.html": "/JacobGit3/React-Portfolio/index.html",
+    "main.11f02713.css.map": "/JacobGit3/React-Portfolio/static/css/main.11f02713.css.map",
+    "main.bbf8d1da.js.map": "/JacobGit3/React-Portfolio/static/js/main.bbf8d1da.js.map",
+    "787.a2cb61a6.chunk.js.map": "/JacobGit3/React-Portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11f02713.css",
+    "static/js/main.bbf8d1da.js"
+  ]
+}
