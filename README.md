@@ -29,6 +29,9 @@
   ---
   This project is used to display my projects, skills, and resume as a digital portfolio to show to companies hiring developers.
   ![projects](src/components/assets/images/portfolio.png)
+  
+  Link to Deployed Application:
+  https://jacobgit3.github.io/React-Portfolio/
 
   ## Technology Used:
 
